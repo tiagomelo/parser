@@ -8,6 +8,8 @@ import java.util.List;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.ef.model.Log;
 
@@ -23,6 +25,8 @@ public class ParseFile {
 	private final static char DELIMITER = '|';
 	public static final String LOG_DATE_PATTERN = "yyyy-MM-dd HH:mm:ss.SSS";
 	public static final SimpleDateFormat LOG_DATE_FORMAT = new SimpleDateFormat(LOG_DATE_PATTERN);
+	
+	private static Logger LOG = LoggerFactory.getLogger(ParseFile.class);
 
 	public static List<Log> parse(String accessLogPath) {
 		List<Log> logRows = new ArrayList<Log>();
@@ -47,8 +51,7 @@ public class ParseFile {
 			}
 
 		} catch (Exception e) {
-			System.out.println("Error in ParserFileReader !!! : " + e.getMessage());
-			e.printStackTrace();
+			LOG.error("Error parsing file: " + e.getMessage());
 		}
 
 		return logRows;
