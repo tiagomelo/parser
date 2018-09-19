@@ -8,5 +8,9 @@ target/
 .idea/
 .eclipse
 
+settings/
+.classpath
+.project
+
 !.mvn/wrapper/maven-wrapper.jar
 
