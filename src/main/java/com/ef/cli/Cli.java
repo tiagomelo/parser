@@ -33,7 +33,7 @@ public class Cli {
 	private String threshold;
 
 	public Cli(String[] args) {
-        setArgs(args);
+		setArgs(args);
 
 		Option accessLogPath = new Option("a", "accesslog", true, "path to access log file");
 		accessLogPath.setRequired(true);
