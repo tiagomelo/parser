@@ -22,12 +22,7 @@ public class LogAuditService {
 	public void log(List<Object[]> rawLogAuditRows) {
 		List<LogAudit> logAuditRows = buildList(rawLogAuditRows);
 		
-		try {
-			logAuditRepository.saveAll(logAuditRows);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
+		logAuditRepository.saveAll(logAuditRows);
 	}
 	
 	private List<LogAudit> buildList(List<Object[]> rawLogAuditRows) {
