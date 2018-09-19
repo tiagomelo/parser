@@ -1,0 +1,12 @@
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/service/LoadLogIntoDatabaseService.java
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/Parser.java
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/repository/LogRepository.java
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/configuration/LogParserApplicationConfiguration.java
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/service/LogAuditService.java
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/cli/Cli.java
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/repository/LogAuditRepository.java
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/util/ParseFile.java
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/model/Log.java
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/util/DateUtils.java
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/service/LogService.java
+/home/tiago/desenv/java/wallethub/log-parser/src/main/java/com/ef/model/LogAudit.java
